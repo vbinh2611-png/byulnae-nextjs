@@ -9,7 +9,7 @@ export const site = {
   tistory: 'https://i-like-interior.tistory.com',
   instagram: '#',
   youtube: '#',
-  area: '서울 경기도 전역',
+  area: '서울·경기도 전역',
 };
 
 export const navItems = [
