@@ -313,4 +313,60 @@ white-space:nowrap;
   display: none;
 }
 
+/* 모바일 가로 넘침 방지 */
+@media (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
 
+  body > *,
+  main,
+  section,
+  .section,
+  .hero,
+  .portfolio-section,
+  .feature-card,
+  .work-grid,
+  .blog-grid,
+  .trust-grid,
+  .contact-grid {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .hero,
+  .about-grid,
+  .contact-grid,
+  .team-strip {
+    flex-direction: column;
+  }
+
+  .hero-text,
+  .hero-image,
+  .about-col,
+  .contact-info,
+  .contact-cta {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .work-grid,
+  .blog-grid,
+  .trust-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card .f-imgs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+
+  .feature-card .f-imgs img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
