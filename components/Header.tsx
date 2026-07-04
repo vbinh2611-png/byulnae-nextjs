@@ -32,3 +32,6 @@ export default function Header() {
     </header>
   );
 }
+
+<header className="desktop-header"></header>
+<header className="mobile-header"></header>
