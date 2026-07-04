@@ -313,13 +313,4 @@ white-space:nowrap;
   display: none;
 }
 
-/* 휴대폰 */
-@media (max-width: 768px) {
-  .desktop-header {
-    display: none !important;
-  }
 
-  .mobile-header {
-    display: flex !important;
-  }
-}
